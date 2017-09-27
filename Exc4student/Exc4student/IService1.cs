@@ -24,6 +24,8 @@ namespace Exc4student
         [OperationContract]
         void removestudent(int st);
 
+        [OperationContract]
+        List<Student> getstudent();
 
         // TODO: Add your service operations here
     }
@@ -33,8 +35,8 @@ namespace Exc4student
     [DataContract]
     public class Student
     {
-        [DataMember]
-        public int index { get; set; }
+        //[DataMember]
+        //public int index { get; set; }
 
         [DataMember]
         public string Name { get; set; }

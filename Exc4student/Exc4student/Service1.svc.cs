@@ -12,7 +12,7 @@ namespace Exc4student
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public static List<Student> stt = new List<Student>();
+        public static  List<Student> stt = new List<Student>();
 
         public void Addstudent(Student st)
         {
@@ -21,9 +21,10 @@ namespace Exc4student
 
         public Student findstudent(string st)
         {
-            return stt.Find(Student => Equals(st, Student.Name));
+            return stt.Find(Student => st == Student.Name);
 
         }
+
 
         public void removestudent(int st)
         {
@@ -31,6 +32,15 @@ namespace Exc4student
 
         }
 
+        public List<Student> getstudent()
+        {
+            //Student ss = new Student();
+            //foreach (var VARIABLE in stt)
+            //{
+            //   ss =    VARIABLE;
+            //}
 
+            return stt;
+        }
     }
 }
