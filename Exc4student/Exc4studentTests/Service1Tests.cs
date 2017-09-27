@@ -39,9 +39,9 @@ namespace Exc4student.Tests
         [TestMethod()]
         public void addfindTest()
         {
-            Student st = new Student() { Name = "shiv ", No = "1234" };
+         //   Student st = new Student() { Name = "shiv ", No = "1234" };
             IService1 test = new Service1();
-            test.Addstudent(st);
+            test.Addstudent("shiv" , 1234);
            var sttt = test.getstudent();
             Assert.AreEqual(1 , sttt.Count);
             //  Student stt = new Student();

@@ -16,17 +16,18 @@ namespace Exc4student
 
 
         [OperationContract]
-        void Addstudent(Student st);
+        int Addstudent(string name, int semester);
 
         [OperationContract]
         Student findstudent(string st);
 
         [OperationContract]
-        void removestudent(int st);
+        void removestudent(Student st);
 
         [OperationContract]
-        List<Student> getstudent();
+        IList<Student> getstudent();
 
+ 
         // TODO: Add your service operations here
     }
 
@@ -36,16 +37,16 @@ namespace Exc4student
     public class Student
     {
         //[DataMember]
-        //public int index { get; set; }
+        //public intjnjn index { get; set; }
 
         [DataMember]
         public string Name { get; set; }
         [DataMember]
-        public string No { get; set; }
+        public int  ph { get; set; }
 
         public override string ToString()
         {
-            return String.Format("{0} {1}", Name, No);
+            return String.Format("{0} {1}", Name, ph);
         }
     }
 }
