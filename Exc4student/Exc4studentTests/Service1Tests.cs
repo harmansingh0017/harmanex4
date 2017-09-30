@@ -41,9 +41,9 @@ namespace Exc4student.Tests
         {
          //   Student st = new Student() { Name = "shiv ", No = "1234" };
             IService1 test = new Service1();
-            test.Addstudent("shiv" , 1234);
+          //  test.Addstudent("shiv" , 1234);
            var sttt = test.getstudent();
-            Assert.AreEqual(1 , sttt.Count);
+            Assert.AreEqual(7 , sttt.Count);
             //  Student stt = new Student();
             // IService1 test1 = new Service1();
             //Student s = test.findstudent("shiv");

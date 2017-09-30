@@ -61,7 +61,7 @@ namespace Exc4student
 
         private static Student ReadStudent(IDataRecord reader)
         {
-             int ph = reader.GetInt32(34);
+            int ph = reader.FieldCount;
             string name = reader.GetString(1);
          //   int semester = reader.GetInt32(2);
           //  DateTime timeStamp = reader.GetDateTime(3);
