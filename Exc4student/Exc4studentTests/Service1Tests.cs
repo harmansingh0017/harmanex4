@@ -36,19 +36,29 @@ namespace Exc4student.Tests
     //        IService1 test = new Service1();
     //        test.Addstudent(st);
     //    }
+     //   [TestMethod()]
+        //public void addfindTest()
+        //{
+        // //   Student st = new Student() { Name = "shiv ", No = "1234" };
+        //    IService1 test = new Service1();
+        //  //  test.Addstudent("shiv" , 1234);
+        //   var sttt = test.getstudent();
+        //    Assert.AreEqual(7 , sttt.Count);
+        //    //  Student stt = new Student();
+        //    // IService1 test1 = new Service1();
+        //    //Student s = test.findstudent("shiv");
+        //    //Assert.IsNotNull(s);
+        //    //Assert.AreEqual("shiv", s.Name);
+        //}
         [TestMethod()]
-        public void addfindTest()
+        public void gettTest()
         {
-         //   Student st = new Student() { Name = "shiv ", No = "1234" };
+           
             IService1 test = new Service1();
-          //  test.Addstudent("shiv" , 1234);
-           var sttt = test.getstudent();
-            Assert.AreEqual(7 , sttt.Count);
-            //  Student stt = new Student();
-            // IService1 test1 = new Service1();
-            //Student s = test.findstudent("shiv");
-            //Assert.IsNotNull(s);
-            //Assert.AreEqual("shiv", s.Name);
+          
+            var sttt = test.getstudent();
+            Assert.AreEqual(7, sttt.Count);
+  
         }
     }
 }
